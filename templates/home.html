@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <title>Different News Papers</title>
+{% endblock head %}
+
+{% block content %}
+    <h2>Choose New Paper </h2>
+    <ul>
+      <li><a href="{% url 'head_line_news' %}">NDTV NEWS</a></li>
+      <li><a href="{% url 'cnn_head_line_news' %}">CNN NEWS</a></li>
+      <li><a href="{% url 'zee_head_line_news' %}">ZEE NEWS</a></li>
+    </ul>
+{% endblock content %}

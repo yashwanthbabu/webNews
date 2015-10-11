@@ -1,0 +1,6 @@
+# Django requirements file
+
+Django> 1.8, <1.9
+unipath
+requests==2.8.0
+BeautifulSoup==3.2.1

@@ -1,0 +1,6 @@
+# local requirement file
+
+-r base.txt
+
+ipdb
+pep8

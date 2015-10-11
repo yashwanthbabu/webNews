@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2> <strong>Head Lines</strong></h2>
+  {% for story in story_list %}
+     <div class=".col-md-3">
+        <a href={{ story.a_url }} target="_blank">{{ story.a_text }}</a>
+        <div>
+          {% if story.story_text %}
+            <ul><li>{{ story.story_text }}</li></ul>
+          {% else %}
+            <br > <br >
+          {% endif %}
+        </div>
+    </div>
+  {% endfor %}
+{% endblock content %}
